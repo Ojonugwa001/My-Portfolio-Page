@@ -154,7 +154,6 @@ nav li a:hover {
 [portfolio-about-section] {
   display: flex;
   flex-direction: row;
-  margin-bottom: 200px;
 }
 
 [portfolio-about-section] hr {
@@ -211,7 +210,18 @@ nav li a:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  margin-bottom: 50px;
   color: #211E20;
+}
+
+[portfolio-section] a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 13px 33px;
+  text-decoration: none;
+  background: #032E4E;
+  border-radius: 33px;
 }
 
 [portfolio-section] > div {
