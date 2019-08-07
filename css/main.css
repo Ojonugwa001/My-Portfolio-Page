@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -101,10 +101,199 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  /* scroll-behavior: smooth; */
+}
 
+nav {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 83px;
+  overflow: hidden;
 
+}
 
+nav li {
+  float: left;
+}
+
+nav li a{
+  display: block;
+  color: #032E4E;;
+  text-align: center;
+  padding: 31px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+nav .logo {
+  text-align: center;
+  padding: 20px 66px;
+}
+
+nav li a:hover {
+  background-color: #f1f1f1;
+}
+
+[portfolio-about-section] {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200px;
+}
+
+[portfolio-about-section] hr {
+  width: 150px;
+  height: 4px;
+  margin: 120px 0 0 69px;
+  background: #032E4E;
+  border-radius: 1px;
+}
+
+[portfolio-about-section] article > h1 {
+  font-weight: 900;
+  font-size: 53px;
+  line-height: 53px;
+  align-items: center;
+  letter-spacing: 0.04em;
+  margin: 115px 60px 50px;
+  color: #211E20;
+}
+
+[portfolio-about-section] article > p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  margin: 0 115px 0 60px;
+  color: #000000;
+}
+
+[portfolio-section] {
+  padding: 0 100px;
+}
+
+[portfolio-section] > hr {
+  width: 65px;
+  height: 4px;
+  background: #032E4E;
+  border-radius: 1px;
+}
+
+[portfolio-section] > h2 {
+  font-weight: bold;
+  font-size: 46px;
+  margin: 20px 0 50px;
+  color: #211E20;
+}
+
+[portfolio-section] h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #211E20;
+}
+
+[portfolio-section] p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #211E20;
+}
+
+[portfolio-section] > div {
+  margin-bottom: 230px;
+}
+
+[first-portfolio] {
+  display: flex;
+  flex-direction: row;
+}
+[first-portfolio] div {
+ position: relative;
+ right: -50px;
+}
+
+[second-portfolio] {
+  display: flex;
+  flex-direction: row;
+}
+[second-portfolio] div {
+ position: relative;
+ left: -100px;
+}
+
+[third-portfolio] {
+  display: flex;
+  flex-direction: row;
+}
+[third-portfolio]  div {
+ position: relative;
+ right: -100px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: #252527;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+[footer-logo] {
+  padding: 78px 0;
+}
+
+[footer-logo] div {
+  margin-top: 43px;
+}
+
+[footer-link] {
+  flex-basis: 50%;
+}
+
+[footer-link] ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 150px 0 100px 0;
+}
+
+[contact] {
+  flex-basis: 15%;
+  padding-top: 78px;
+  color: #FFFFFF;
+}
+
+[contact] h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+[contact] p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+}
 
 
 
@@ -197,7 +386,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -215,7 +404,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

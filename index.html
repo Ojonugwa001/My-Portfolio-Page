@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -23,12 +24,139 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="img/icon/logo.svg" alt="logo"></a>
+    </div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section portfolio-about-section id="home">
+    <hr>
+    <article>
+      <h1>Hello I’m Ojonugwa Justice Alikali</h1>
+      <p>A product Designer with deep understanding of the principle of user experience (UX), visual aesthetics and versed in designing for different platforms.</p>
+    </article>
+
+    <div>
+        <img src="img/avatar.png" alt="Ojonugwa Justice Alikali ">
+    </div>
+  </section>
+
+  <section portfolio-section id="portfolio">
+    <!-- <div> -->
+    <h1 style="visibility: hidden; margin-bottom: 100px">My Portfolio</h1>
+    <hr>
+    <h2>My Portfolio</h2>
+    <!-- </div> -->
+    <div first-portfolio>
+        <article>
+            <h3>Accolade House Montessori</h3>
+            <p> design dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed qui aliqua.
+            <br><br>
+            Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Minim</p>
+        </article>
+
+        <div>
+          <img src="img/icon/mobile-ico.svg" alt="icon">
+        </div>
+    </div>
+
+    <div second-portfolio>
+      <div>
+        <img src="img/icon/laptop-ico.svg" alt="icon">
+      </div>
+
+      <article>
+          <h3>Proudly Nigeria Expo</h3>
+          <p>Product design dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed qui aliqua.
+          <br><br>
+          Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Minim </p>
+      </article>
+    </div>
+
+    <div third-portfolio>
+        <article>
+            <h3>Joru Ventures</h3>
+            <p>Product design dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quiaolor sit amet, consectetur, adipisci velit, sed qui aliqua.
+            <br><br>
+            Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Minim </p>
+        </article>
+
+        <div>
+            <img src="img/icon/laptop-ico-2.svg" alt="icon">
+          </div>
+    </div>
+
+  </section>
+
+  <footer>
+      <div footer-logo>
+        <img src="img/icon/logo-footer.svg" alt="logo">
+
+        <div>
+          <img src="img/icon/facebook.svg" alt="facebook">
+          <img src="img/icon/twitter.svg" alt="twitter">
+          <img src="img/icon/github-logo.svg" alt="github">
+        </div>
+      </div>
+
+      <div footer-link id="contact">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div contact>
+        <h3>CONNECT WITH ME</h3>
+        <p><a href="github.com/ojay-dev">Ojay-dev</a>  <br> +234 706 334 1844 <br> +234 813 433 4629</p>
+      </div>
+
+    </footer>
+
+
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1000, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
